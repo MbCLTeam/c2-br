@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubieCloud</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* Define as cores do site */
+    :root {
+      --cor-primaria: #c775ff;
+      --cor-secundaria: #a882f4;
+    }
+
+    /* Define o gradiente para os botões */
+    .btn-gradient {
+      background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+      color: white;
+      border: none;
+    }
+
+    /* Define o estilo da barra de menu */
+    .navbar {
+      background-color: var(--cor-primaria);
+      color: white;
+    }
+
+    /* Define o estilo do logo no menu */
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Define o estilo dos links no menu */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    /* Define o estilo do botão de menu (os três riscos) */
+    .navbar-toggler {
+      border: none;
+      color: white;
+    }
+    footer {
+  background-color: #f6f6f6;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Barra de menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">CubieCloud</a>
+
+      <!-- Botão de menu (os três riscos) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-sites/">Hospedagem de Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-cdn">Servidor CDN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.cubiecloud.ml">Drive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-vps">Hospedagem VPS</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="https://auth.cubiecloud.ml/account/login">Login</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Conteúdo da página aqui -->
+<div class="container py-5">
+  <h1>Servidor CDN</h1>
+  <p>O servidor CDN (Content Delivery Network) é uma tecnologia que permite distribuir arquivos pela internet de forma mais rápida e eficiente. Com nossos servidores CDN, você poderá acelerar a entrega de arquivos estáticos como imagens, vídeos, documentos, entre outros, reduzindo o tempo de carregamento do seu site ou aplicação web.</p>
+  <p>Nossos servidores CDN são altamente escaláveis e contam com data centers distribuídos ao redor do mundo, o que garante que seu conteúdo esteja sempre disponível para seus visitantes, independente da sua localização geográfica.</p>
+
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Plano Free</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Gratuito</h6>
+          <p class="card-text">Este plano inclui até 100MB em cache CDN, ideal para quem está começando.</p>
+          <a href="#" class="btn btn-block btn-gradient">Assinar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Plano Starter</h5>
+          <h6 class="card-subtitle mb-2 text-muted">R$0,69/mês</h6>
+          <p class="card-text">Este plano inclui 2.5GB em cache CDN, ideal para sites de médio porte.</p>
+          <a href="#" class="btn btn-block btn-gradient">Assinar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Plano Premium</h5>
+          <h6 class="card-subtitle mb-2 text-muted">R$0,80/mês</h6>
+          <p class="card-text">Este plano inclui até 5GB em cache CDN, ideal para sites com alto tráfego.</p>
+          <a href="#" class="btn btn-block btn-gradient">Assinar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h2>Vantagens do servidor CDN</h2>
+      <ul>
+        <li>Redução do tempo de carregamento do site</li>
+        <li>Aumento da velocidade de acesso aos arquivos estáticos</li>
+        <li>Melhora na experiência do usuário</li>
+        <li>Redução da carga do servidor principal</li>
+        <li>Aumento da segurança do site</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <img src="https://cubiecloud.ml/assets/cloud-2.png" alt="CDN" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light py-3" style="background-color: #f6f6f6;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>CubieCloud - Soluções em Nuvem</p>
+        <p><i class="fas fa-envelope"></i> suporte@cubiecloud.ml</p>
+        <p><i class="fas fa-cloud"></i> <a href="https://suporte.cubiecloud.ml"></a>suporte.cubiecloud.ml</p>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <p>CubieCloud &copy; Todos Direitos Reservados 2019-2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
