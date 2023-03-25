@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubieCloud - Hospedagem Gratuita e Barata</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    /* Define as cores do site */
+    :root {
+      --cor-primaria: #c775ff;
+      --cor-secundaria: #a882f4;
+    }
+
+    /* Define o gradiente para os botões */
+    .btn-gradient {
+      background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+      color: white;
+      border: none;
+    }
+
+    /* Define o estilo da barra de menu */
+    .navbar {
+      background-color: var(--cor-primaria);
+      color: white;
+    }
+
+    /* Define o estilo do logo no menu */
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Define o estilo dos links no menu */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    /* Define o estilo do botão de menu (os três riscos) */
+    .navbar-toggler {
+      border: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de menu -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="/"><img src="https://cubiecloud.ml/assets/logo.png?refresh_rate=1" width="65px" height="42px"></a>
+
+     <!--- Botão de menu --->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-sites/">Hospedagem de Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-cdn">Servidor CDN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.cubiecloud.ml">Drive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-vps">Hospedagem VPS</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="https://auth.cubiecloud.ml/account/login">Login</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+<!-- Conteúdo da página aqui -->
+<div class="container py-5">
+  <h1>Bem-vindo à CubieCloud</h1>
+  <p>Oferecemos soluções em nuvem para diversas necessidades, desde hospedagem de sites até servidores dedicados. Nossos serviços são seguros, confiáveis e acessíveis.</p>
+  <button class="btn btn-gradient">Saiba mais</button>
+
+  <hr>
+
+  <div class="row my-5">
+    <div class="col-md-6">
+      <img src="https://cubiecloud.ml/assets/cloud-1.png" alt="Hospedagem de Websites" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2>Hospedagem de Websites</h2>
+      <p>A CubieCloud oferece hospedagem de websites com alta performance e segurança. Com nossos planos, você pode escolher a melhor opção para suas necessidades, desde sites simples até aplicações mais complexas.</p>
+      <button class="btn btn-gradient">Conheça nossos planos</button>
+    </div>
+  </div>
+ 
+  <hr>
+
+  
+  <div class="row my-5">
+    <div class="col-md-6 order-md-2">
+      <img src="https://cubiecloud.ml/assets/cloud-2.png" alt="Servidor CDN" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h2>Servidor CDN</h2>
+      <p>Aumente a velocidade e a performance do seu site com nossa solução de Servidor CDN (Content Delivery Network). Com ele, seus arquivos são distribuídos por diversos servidores, reduzindo o tempo de carregamento das páginas.</p>
+      <a href="/planos/hospedagem-de-cdn/"><button class="btn btn-gradient">Comece Gratuitamente</button></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row my-5">
+    <div class="col-md-6">
+      <img src="https://cubiecloud.ml/assets/cloud-3.png" alt="Drive" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2>Drive</h2>
+      <p>Armazene seus arquivos na nuvem com segurança e praticidade. Com o Drive da CubieCloud, você tem espaço de armazenamento para guardar seus documentos, fotos, vídeos e muito mais.</p>
+      <a href="httpa://drive.cubiecloud.ml/"><button class="btn btn-gradient">Crie sua conta</button></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row my-5">
+    <div class="col-md-6 order-md-2">
+      <img src="https://cubiecloud.ml/assets/cloud-4.png" alt="Hospedagem VPS" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <h2>Hospedagem VPS</h2>
+      <p>Com a hospedagem VPS da CubieCloud, você tem um servidor virtual exclusivo para sua aplicação ou website. Escolha o sistema operacional, configure as opções avançadas e tenha total controle do seu ambiente de hospedagem.</p>
+      <a href="/planos/hospedagem-de-vps/"><button class="btn btn-gradient">Conheça nossos planos</button></a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>CubieCloud © Todos Direito Reservados 2019 - 2023</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
