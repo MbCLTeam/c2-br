@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedagem de Site | Plano 512MB</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+      /* Define as cores do site */
+      :root {
+        --cor-primaria: #c775ff;
+        --cor-secundaria: #a882f4;
+        --cor-fundo: #f4f4f4;
+        --cor-texto: #333333;
+      }
+
+      /* Define o gradiente para os botões */
+      .btn-gradient {
+        background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+        color: white;
+        border: none;
+      }
+
+      /* Define o estilo da barra de menu */
+      .navbar {
+        background-color: var(--cor-primaria);
+        color: white;
+      }
+
+      /* Define o estilo do logo no menu */
+      .navbar-brand {
+        color: white;
+        font-weight: bold;
+      }
+
+      /* Define o estilo dos links no menu */
+      .navbar-nav .nav-link {
+        color: white;
+      }
+
+      /* Define o estilo do botão de menu (os três riscos) */
+      .navbar-toggler {
+        border: none;
+        color: white;
+      }
+
+      /* Define o estilo dos cards de planos */
+      .card-planos {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Define o efeito de hover nos cards de planos */
+      .card-planos:hover {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+
+      /* Define o estilo do footer */
+      footer {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de menu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">Hospedagem de Site</a>
+
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+<!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-sites/">Hospedagem de Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-cdn">Servidor CDN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.cubiecloud.ml">Drive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planos/hospedagem-de-vps">Hospedagem VPS</a>
+          </li>
+                    <li class="nav-item">
+            <a class="nav-link" href="https://auth.cubiecloud.ml/account/login">Login</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Corpo da página -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <!-- Plano único -->
+        <div class="col-lg-4 mb-4">
+          <div class="card card-planos">
+            <div class="card-header">
+              <h3 class="text-center">Teste 7 Dias Grátis</h3>
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title">R$0/mês</h4>
+              <p class="card-text">512MB de memória</p>
+              <p class="card-text">256MB de RAM</p>
+              <p class="card-text">100GB de banda larga</p>
+              <a href="mailto:suporte@cubiecloud.ml?subject=Eu gostaria de um teste grátis de hospedagem de sites&body=olá, eu me interessei nos planos de hospedagem de websitee, e eu gostaria de requisitar uma avaliação gratuita para eu experimentar os serviços." class="btn btn-gradient">Entre em Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>CubieCloud &copy; 2019 - 2023
+          </div>
+          <div class="col-md-6 text-md-right">
+            <p>
+              <a href="https://plus.cubiecloud.ml/website-hosting">Planos Personalizado</a>
+              &middot;
+              <a href="https://plus.cubiecloud.ml/wp-hosting">Hospedagem WordPress</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-BJD5GhrjK6Jzsd6PbU6wz2KMN5Y8bxGXn6Vi+XHf07aVRDvJhK/GWOpStly11UCw"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
