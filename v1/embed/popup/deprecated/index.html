@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aviso de Descontinuação</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>#aviso{display:none;position:fixed;z-index:999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4);}#aviso .popup{background-color:#fefefe;margin:15% auto;padding:20px;border:1px solid #888;width:80%;max-width:600px;text-align:center;position:relative;}#aviso .popup .fechar{position:absolute;top:5px;right:10px;font-size:24px;color:#aaa;cursor:pointer;}</style>
+</head>
+<body>
+
+	<!-- Popup -->
+	<div id="aviso" class="modal">
+		<div class="popup">
+			<span class="fechar">&times;</span>
+			<h2>Aviso de Descontinuação</h2>
+			<p>Este serviço é mantido pela <a href="https://cubiecloud.ml">CubieCloud</a>, e será descontinuado em breve ou não receberá mais suporte.</p>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			// Quando o botão para fechar o popup for clicado, esconde o popup
+			$(".fechar").click(function(){
+				$("#aviso").hide();
+			});
+
+			// Quando a página for carregada, mostra o popup
+			$("#aviso").show();
+		});
+	</script>
+
+</body>
+</html>
