@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cubie Engine | CubieCloud</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #57b846, #389e0d);
+    }
+
+    .box {
+      margin: 50px auto;
+      max-width: 400px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <h1 class="navbar-brand">Cubie Engine</h1>
+
+      <p class="navbar-text">
+        Powered by Cubie
+      </p>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="box">
+      <h3>Cubie Engine</h3>
+
+      <button id="download-btn" class="btn btn-success">
+        <i class="fa-solid fa-download"></i>
+        Baixar v1.0.3-lts-build03
+      </button> 
+
+      <p class="supported-device"><i>Para Windows/Mac/Linux</i></p>
+
+    </div>
+  </div>
+
+  <script>
+
+    const downloadBtn = document.getElementById('download-btn');
+
+    downloadBtn.addEventListener('click', () => {
+
+      showLoading();
+
+      setTimeout(() => {
+
+        let seconds = 5;
+        
+        const countdown = setInterval(() => {
+          showCountdown(seconds);
+          seconds--;
+
+          if (seconds < 0) {
+            clearInterval(countdown);
+            showDownloadDone();
+          }
+
+        }, 1000);
+
+      }, 2000);
+
+    });
+
+    function showLoading() {
+      document.querySelector('.box').innerHTML = `
+        <div class="spinner-border text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      `;
+    }
+
+    function showCountdown(seconds) {
+      document.querySelector('.box').innerHTML = `
+        <h3 class="text-success">Download</h3>
+        O download será iniciado em ${seconds} segundo${seconds > 1 ? 's' : ''}
+      `; 
+    }
+
+    function showDownloadDone() {
+      document.querySelector('.box').innerHTML = `
+        <h3 class="text-success">Download Concluído</h3>
+        O seu download foi concluído. Caso não tenha iniciado, aperte abaixo.<br><br>
+        
+        <u style="color: green"><a style="color: green" href="https://cubie.com.br/cubie-engine">Tentar Novamente</a></u>`;
+
+      setTimeout(() => {
+        window.location.href = 'https://enginedownload.cubie.com.br/cubie-engine-1.0.3-lts-build03/';
+      }, 2000);
+    }
+
+  </script>
+
+</body>
+
+</html>
